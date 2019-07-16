@@ -20,6 +20,9 @@ public class UserController {
         User user = userMapper.selByid(id);
         System.out.println(user);
 
+
+        System.out.println("git....");
+
         return user;
     }
     @GetMapping("/update")
