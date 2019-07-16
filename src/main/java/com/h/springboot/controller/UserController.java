@@ -26,7 +26,9 @@ public class UserController {
     @CachePut(value = "user",key = "#result.id")
     public User updateUser(User user){
         userMapper.updateUser(user);
+        System.out.println("user");
         return user;
+
     }
 
 
